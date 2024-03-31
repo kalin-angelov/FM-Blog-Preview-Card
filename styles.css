@@ -1,82 +1,107 @@
 body {
-    font-family:"Figtree",
-    sans-serif;
-    font-size:16px;
-    background-color:#f4d04e;
+  font-family: "Figtree", sans-serif;
+  background-color: hsl(47, 88%, 63%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 article {
-    display:flex;
-    flex-direction:column;
-    border:1px solid #000;
-    border-radius:10px;
-    background-color:#fff;
-    padding:16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1.5px solid black;
+  box-shadow: 8px 8px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 22px;
+  margin: 150px auto;
+  width: 287px;
+}
+
+div {
+  margin-bottom: 20px;
 }
 
 svg {
-    border-radius:10px;
-    align-self:center;width:315px;
+  max-width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
 }
 
 button {
-    background-color:#f4d04e;
-    border:0 solid rgba(0,0,0,0);
-    border-radius:5px;
-    font-weight:800;
-    width:80px;
-    height:auto;
-    padding:5px;
-    margin:0;
-    font-size:11px;
+  background-color: hsl(47, 88%, 63%);
+  border: 0 solid transparent;
+  border-radius: 5px;
+  font-weight: 800;
+  width: 80px;
+  height: auto;
+  padding: 6px;
+  margin: 0;
+  font-size: 11px;
 }
 
 data {
-    padding:20px 0;
-    font-weight:500;
+  padding: 15px 0 17px 0;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 a {
-    text-decoration:none;
-    color:#121212;
-    font-weight:800;
+  text-decoration: none;
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+  font-size: 22px;
+}
+a:hover {
+  color: hsl(47, 88%, 63%);
 }
 
-a:hover {
-    color:#f4d04e;
-} 
-
 p {
-    color:gray;
-    font-weight:500;
+  color: hsl(0, 0%, 50%);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 figure {
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin:0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
 }
 
 img {
-    width:35px;
-    height:auto;
+  width: 35px;
+  height: auto;
 }
 
 figcaption {
-    font-weight:800;
+  font-weight: 800;
 }
 
 footer {
-    position:absolute;
-    right:10px;
+  position: absolute;
+  right: 10px;
 }
-
-footer a { 
-    color:#8a2be2;
+footer a {
+  color: blueviolet;
 }
-
 footer a:hover {
-    color:#121212;
+  color: hsl(0, 0%, 7%);
 }
-/*# sourceMappingURL=styles.css.map */
+
+@media screen and (min-width: 1024px) {
+  article {
+    width: 300px;
+    margin: 180px auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -3,25 +3,42 @@ $white: hsl(0, 0%, 100%);
 $grey: hsl(0, 0%, 50%);
 $black: hsl(0, 0%, 7%);
 
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 body {
     font-family: "Figtree", sans-serif;
-    font-size: 16px;
     background-color: $yellow;
 }
 
+main {
+    @include flexCenter();
+}
+
 article {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 10px;
+    @include flexCenter();
+    align-items: flex-start;
+    border: 1.5px solid black;
+    box-shadow: 8px 8px;
+    border-radius: 20px;
     background-color: $white;
-    padding: 16px;
+    padding: 22px;
+    margin: 150px auto;
+    width: 287px;
+}
+
+div {
+    margin-bottom: 20px;
 }
 
 svg {
+    max-width: 100%;
+    height: fit-content;
     border-radius: 10px;
-    align-self: center;
-    width: 315px;
 }
 
 button {
@@ -31,20 +48,22 @@ button {
     font-weight: 800;
     width: 80px;
     height: auto;
-    padding: 5px;
+    padding: 6px;
     margin: 0;
     font-size: 11px;
 }
 
 data {
-    padding: 20px 0;
+    padding: 15px 0 17px 0;
     font-weight: 500;
+    font-size: 13px;
 }
 
 a {
     text-decoration: none;
     color: $black;
     font-weight: 800;
+    font-size: 22px;
     &:hover {
         color: $yellow;
     }
@@ -53,13 +72,15 @@ a {
 p {
     color: $grey;
     font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 14px;
 }
 
 figure {
     display: flex;
     align-items: center;
     gap: 10px;
-
     margin: 0;
 }
 
@@ -80,5 +101,12 @@ footer {
         &:hover {
             color: $black;
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    article {
+        width: 300px;
+        margin: 180px auto;
     }
 }
