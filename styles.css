@@ -104,7 +104,7 @@ footer a:hover {
 @media screen and (min-width: 1024px) {
   .mainContainer {
     width: 338px;
-    margin: 280px auto;
+    margin: 240px auto;
   }
   .mainContainer button {
     margin-top: 0;
