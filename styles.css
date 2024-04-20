@@ -48,7 +48,7 @@ button {
   cursor: pointer;
 }
 
-h2 {
+h1 {
   color: black;
   padding: 2px 0 5px 0;
   font-weight: 800;
@@ -111,7 +111,7 @@ footer a:hover {
     width: 82px;
     font-size: 13px;
   }
-  .mainContainer h2 {
+  .mainContainer h1 {
     padding: 2px 0 5px 0;
     font-weight: 800;
     font-size: 14px;
