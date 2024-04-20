@@ -10,7 +10,7 @@ main {
   flex-direction: column;
 }
 
-article {
+.mainContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,18 +21,17 @@ article {
   border-radius: 20px;
   background-color: hsl(0, 0%, 100%);
   padding: 22px;
-  margin: 150px auto;
-  width: 287px;
+  margin: 290px auto;
+  width: 280px;
 }
 
 div {
   margin-bottom: 20px;
+  height: 205px;
 }
 
 svg {
   max-width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
   border-radius: 10px;
 }
 
@@ -41,25 +40,26 @@ button {
   border: 0 solid transparent;
   border-radius: 5px;
   font-weight: 800;
-  width: 82px;
+  width: 75px;
   height: auto;
   padding: 6px;
   margin: 0;
-  font-size: 12px;
+  font-size: 11px;
   cursor: pointer;
 }
 
-data {
-  padding: 15px 0 17px 0;
-  font-weight: 500;
-  font-size: 14px;
+h2 {
+  color: black;
+  padding: 2px 0 5px 0;
+  font-weight: 800;
+  font-size: 12px;
 }
 
 a {
   text-decoration: none;
   color: hsl(0, 0%, 7%);
   font-weight: 800;
-  font-size: 24px;
+  font-size: 20px;
 }
 a:hover {
   color: hsl(47, 88%, 63%);
@@ -70,6 +70,7 @@ p {
   font-weight: 500;
   line-height: 1.5;
   margin-bottom: 23px;
+  font-size: 14px;
 }
 
 figure {
@@ -101,8 +102,24 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  article {
-    width: 337px;
+  .mainContainer {
+    width: 338px;
     margin: 280px auto;
+  }
+  .mainContainer button {
+    margin-top: 0;
+    width: 82px;
+    font-size: 13px;
+  }
+  .mainContainer h2 {
+    padding: 2px 0 5px 0;
+    font-weight: 800;
+    font-size: 14px;
+  }
+  .mainContainer a {
+    font-size: 24px;
+  }
+  .mainContainer p {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=styles.css.map */

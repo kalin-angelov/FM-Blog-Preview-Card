@@ -19,7 +19,7 @@ main {
     @include flexCenter();
 }
 
-article {
+.mainContainer {
     @include flexCenter();
     align-items: flex-start;
     border: 1.5px solid black;
@@ -27,17 +27,17 @@ article {
     border-radius: 20px;
     background-color: $white;
     padding: 22px;
-    margin: 150px auto;
-    width: 287px;
+    margin: 290px auto;
+    width: 280px;
 }
 
 div {
     margin-bottom: 20px;
+    height: 205px;
 }
 
 svg {
     max-width: 100%;
-    height: fit-content;
     border-radius: 10px;
 }
 
@@ -46,25 +46,26 @@ button {
     border: 0 solid transparent;
     border-radius: 5px;
     font-weight: 800;
-    width: 82px;
+    width: 75px;
     height: auto;
     padding: 6px;
     margin: 0;
-    font-size: 12px;
+    font-size: 11px;
     cursor: pointer;
 }
 
-data {
-    padding: 15px 0 17px 0;
-    font-weight: 500;
-    font-size: 14px;
+h2 {
+    color: black;
+    padding: 2px 0 5px 0;
+    font-weight: 800;
+    font-size: 12px;
 }
 
 a {
     text-decoration: none;
     color: $black;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
     &:hover {
         color: $yellow;
     }
@@ -75,6 +76,7 @@ p {
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 23px;
+    font-size: 14px;
 }
 
 figure {
@@ -106,8 +108,27 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-    article {
-        width: 337px;
+    .mainContainer {
+        width: 338px;
         margin: 280px auto;
+        button {
+            margin-top: 0;
+            width: 82px;
+            font-size: 13px;
+        }
+
+        h2 {
+            padding: 2px 0 5px 0;
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        a {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
     }
 }
