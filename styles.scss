@@ -46,25 +46,25 @@ button {
     border: 0 solid transparent;
     border-radius: 5px;
     font-weight: 800;
-    width: 80px;
+    width: 82px;
     height: auto;
     padding: 6px;
     margin: 0;
-    font-size: 11px;
+    font-size: 12px;
     cursor: pointer;
 }
 
 data {
     padding: 15px 0 17px 0;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 a {
     text-decoration: none;
     color: $black;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 24px;
     &:hover {
         color: $yellow;
     }
@@ -74,24 +74,24 @@ p {
     color: $grey;
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: 23px;
 }
 
 figure {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     margin: 0;
 }
 
 img {
-    width: 35px;
+    width: 32px;
     height: auto;
 }
 
 figcaption {
     font-weight: 800;
+    font-size: 14px;
 }
 
 footer {
@@ -107,7 +107,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
     article {
-        width: 300px;
-        margin: 180px auto;
+        width: 337px;
+        margin: 280px auto;
     }
 }
